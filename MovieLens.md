@@ -1,4 +1,4 @@
-# capstone-project-2024
+# capstone-project
 
 
 # Install all needed libraries if it is not present

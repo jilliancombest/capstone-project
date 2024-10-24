@@ -69,22 +69,19 @@ rm(dl, ratings, movies, test_index, temp, movielens, removed)
 
 
 
-
-
-
 # Executive Summary
 
-The purpose for this project is creating a recommender system using MovieLens dataset. 
+The purpose of this project is creating a system using MovieLens dataset. 
 
-The version of movielens dataset used for this final assignment contains approximately 10 Milions of movies ratings, divided in 9 Milions for training and one Milion for validation. It is a small subset of a much larger (and famous) dataset with several millions of ratings. Into the training dataset there are approximately **70.000 users** and **11.000 different movies** divided in 20 genres such as Action, Adventure, Horror, Drama, Thriller and more.
+This version contains approximately 10 Million movie ratings, separated to 9 Million for training and one Milion for validation. In the training dataset there are approximately **70.000 users** and **11.000 different movies** catergorized into 20 genres, including Action, Adventure, Horror, Drama, Thriller and more.
 
-After a initial data exploration, the recommender systems builted on this dataset are evaluated and choosen based on the RMSE - Root Mean Squared Error that should be at least lower than **0.87750**.
+After the initial data exploration, the systems built on this dataset are evaluated and choosen based on the RMSE - Root Mean Squared Error. The RSME should be lower than **0.87750**.
 
 $$\mbox{RMSE} = \sqrt{\frac{1}{n}\sum_{t=1}^{n}e_t^2}$$
 
 
-
 # The RMSE function that will be used in this project is:
+
 RMSE <- function(true_ratings = NULL, predicted_ratings = NULL) {
     sqrt(mean((true_ratings - predicted_ratings)^2))
 }
